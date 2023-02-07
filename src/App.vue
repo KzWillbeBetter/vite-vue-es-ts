@@ -1,10 +1,10 @@
 <template>
   <div>
-<!--    <List></List>-->
+    <!--    <List></List>-->
     <div class="border">
       <h3>JS 父子之间通信</h3>
       <div>MyName:{{ name }}</div>
-<!--      <div>MyName:{{ aaa }}</div>-->
+      <!--      <div>MyName:{{ aaa }}</div>-->
       <HelloWorld @click="accept" :msg="obj"/>
     </div>
     <div class="border">
@@ -18,7 +18,6 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Modal from './components/Modal/Index.vue'
 import {provide, reactive, ref} from "vue";
-import List from "./components/List/List.vue";
 
 provide('test', '23')
 const obj = reactive({

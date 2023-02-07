@@ -7,7 +7,7 @@
     </select>
   </div>
   <input v-model="name" type="text"/>
-  <ul v-for="item in newList">
+  <ul v-for="item in newList" :key="item">
     <li>{{ item.name }}</li>
   </ul>
 </template>
@@ -15,8 +15,9 @@
 <script setup>
 import queryList1 from "./queryList.js"
 import addList1 from "./addList.js"
+
 const {list, name} = queryList1()
-console.log(list,name.value)
+console.log(list, name.value)
 const newList = addList1(list)
 </script>
 
