@@ -1,11 +1,11 @@
 <template>
   <div>
-    <el-button type="primary">Primary</el-button>
+    <el-button type="primary">{{ name }}</el-button>
   </div>
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
 
-const name = ref("god");
+const name: any = ref("god");
 </script>
 <style></style>
