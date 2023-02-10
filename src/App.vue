@@ -1,16 +1,11 @@
 <template>
   <div>
-    11111111111111
+    <el-button type="primary">Primary</el-button>
   </div>
-
 </template>
 <script setup lang="ts">
-import {ref} from "vue";
+import { ref } from "vue";
 
-const name: any = ref('god')
-
-
+const name = ref("god");
 </script>
-<style>
-
-</style>
+<style></style>
